@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    /* Replace with your actual image path */
+    background: url(WhatsApp\ Image\ 2026-02-10\ at\ 1.12.02\ PM.jpeg) no-repeat center center/cover;
+    opacity: 100;
+    overflow: hidden;
+}
+
+/* Background Blur Effect */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: inherit;
+    filter: blur(8px);
+    z-index: -1;
+    transform: scale(1.1); /* Prevents white edges from blur */
+}
+
+.container {
+    text-align: center;
+    z-index: 1;
+    max-width: 500px;
+    padding: 20px;
+}
+
+.tagline {
+    letter-spacing: 4px;
+    font-size: 1rem;
+    margin-bottom: 40px;
+    color: #000000;
+    font-weight: 700;
+}
+
+/* The Large 00 Day Badge */
+.day-badge {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.days-val {
+    font-family: 'Cinzel', serif;
+    font-size: 8rem;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1;
+}
+
+.to-go-wrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.day-label {
+    display: block;
+    font-size: 2rem;
+    position: relative;
+    letter-spacing: 9px;
+    font-family: 'Cinzel', serif;
+    margin-top: 160px;
+    color: #000000;
+}
+
+.to-go {
+    display: block;
+    font-family: 'Great Vibes', cursive;
+    font-size: 2rem;
+    margin-top: -10px;
+    color: #000;
+}
+
+.names {
+    font-family: 'Cinzel', serif;
+    font-size: 2.5rem;
+    letter-spacing: 6px;
+    margin: 50px 0;
+    color: #000000;
+    
+}
+
+/* Countdown Row */
+.countdown {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.time-box span {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.time-box p {
+    font-size: 0.6rem;
+    letter-spacing: 2px;
+    margin-top: 5px;
+    color: #ffffff;
+}
+
+.divider {
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+#hours{
+    color: rgb(255, 255, 255);
+    font-style: oblique;
+    font-family: fantasy;
+}
+
+#minutes{
+    color: rgb(255, 255, 255);
+    font-style: oblique;
+    font-family: fantasy;
+}
+
+#seconds{
+    color: rgb(255, 255, 255);
+    font-style: oblique;
+    font-family: fantasy;
+}
+
+/* Button */
+.invitation-btn {
+    padding: 15px 40px;
+    border-radius: 50px;
+    border: none;
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(5px);
+    font-family: 'Cinzel', serif;
+    letter-spacing: 2px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.invitation-btn:hover {
+    background: rgba(255, 255, 255, 0.9);
+    transform: translateY(-2px);
+}
